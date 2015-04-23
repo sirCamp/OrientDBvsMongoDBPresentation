@@ -110,22 +110,22 @@
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{Introduzione} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
 \frametitle{MongoDB}
-Nato nel 2009, \'e uno dei database documentali più conosciuto e utilizzato nel mondo le sue caratteristiche principali sono.
+Born in 2009, it is one of the best known and document databases used in the world of its main features are:
 \begin{itemize}
-\item Linguaggio di implementazione C++
-\item Modello di database \emph{Document Store}
-\item Database NO-SQL e Non relazionale
-\item Assenza di Transazioni ACID
-\item Linguaggio Query ad hoc
-\item Aggregazione
-\item Indici unici
+\item C++ implementation language 
+\item Database model \emph{Document Store}
+\item NO-SQL and Non-relational database
+\item ACID transaction less
+\item Ad hoc query language
+\item Aggregation
+\item Unique Index
 \end{itemize}
 \end{frame}
 
@@ -133,35 +133,35 @@ Nato nel 2009, \'e uno dei database documentali più conosciuto e utilizzato nel
 
 \begin{frame}
 \frametitle{OrientDB}
-Nato nel 2010, \'e un ibrido tra un database documentale un database a grafi.\\
-Le sue caratteristiche principali sono.
+Born in 2010, it is a hybrid between a database of documents to a database graphs. \\
+Its main features are:
 \begin{itemize}
-\item Linguaggio di implementazione Java
-\item Modello di database \emph{Document Store - Graph DBMS}
-\item Database NO-SQL 
-\item Linguaggio Query simile a SQL
-\item Presenza di Transazioni ACID
-\item Indicizzazione che permette il multithread
+\item Java implementation language
+\item Database model \emph{Document Store - Graph DBMS}
+\item NO-SQL Database  
+\item Query language similar to SQL
+\item ACID transaction
+\item Multithread indexing
 \item Trigger
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
-\section{Sciegliere il DB corretto}
+\section{Choose the right Database}
 
 \begin{frame}
-\frametitle{Quando usare MongoDB}
+\frametitle{When use MongoDB}
 \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
 \column{.45\textwidth} % Left column and width
-\textbf{Perchè usare MongoDB?}
+\textbf{Why use MongoDB?}
 \begin{enumerate}
-\item Grande quantit\'a di dati
-\item Non servono Transazioni
-\item Non servono relazioni
-\item Modello di Sviluppo Agile
-\item Scalabilit\'a
-\item Prestazioni
+\item Large amounts of data
+\item No transactions needs
+\item No relations need
+\item Agile development method
+\item Scalability
+\item Performance
 \end{enumerate}
 
 \column{.5\textwidth} % Right column and width
@@ -174,20 +174,20 @@ Le sue caratteristiche principali sono.
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Quando usare OrientDB}
+\frametitle{When use OrientDB}
 \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
 \column{.45\textwidth} % Left column and width
-\textbf{Perchè usare OrientDB?}
+\textbf{Why use OrientDB?}
 \begin{enumerate}
-\item Grande quantit\'a di dati
-\item servono Transazioni
-\item servono relazioni
-\item Modello di Sviluppo Agile
-\item Scalabilit\'a
-\item Prestazioni (JOIN incluse)
-\item Linguaggio Query
-\item Classi di Oggetti
+\item Large amounts of data
+\item Transactions needs
+\item Telations need
+\item Agile development method
+\item Scalability
+\item Performance (JOIN included)
+\item Query language
+\item Object class mapping
 \end{enumerate}
 
 \column{.5\textwidth} % Right column and width
@@ -205,29 +205,29 @@ Le sue caratteristiche principali sono.
 
 \begin{block}{Relazioni}
 \begin{itemize}
-\item OrientDB: Relazioni con \emph{puntatori} tra JSON
-\item MongoDB: \emph{Indici} scritti su file
+\item OrientDB: Relation whit \emph{pointer} between JSON
+\item MongoDB: \emph{Index} write on file
 \end{itemize}
 \end{block}
 
-\begin{block}{Linguaggio}
+\begin{block}{Query Language}
 \begin{itemize}
-\item OrientDB: linguaggio simil-SQL
-\item MongoDB: liguaggio propietario 
+\item OrientDB: simil-SQL language
+\item MongoDB: new dedicated language 
 \end{itemize}
 \end{block}
 
-\begin{block}{Gestione Memoria}
+\begin{block}{Memory Management}
 \begin{itemize}
-\item OrientDB: usa tecnica chiamata PLOCAL
-\item MongoDB:  usa tecnica chiamata LOCAL
+\item OrientDB: PLOCAL technique
+\item MongoDB:  LOCAL technique
 \end{itemize}
 \end{block}
 
-\begin{block}{Inidicizzazione}
+\begin{block}{Indexing}
 \begin{itemize}
-\item OrientDB: tre algoritmi (SB-tree, Hash index ,Lucene)
-\item MongoDB:  un algoritmo (B-tree)
+\item OrientDB: three algorithms (SB-tree, Hash index ,Lucene)
+\item MongoDB:  one algorithm (B-tree)
 \end{itemize}
 \end{block}
 
@@ -235,14 +235,14 @@ Le sue caratteristiche principali sono.
 
 
 %------------------------------------------------
-\section{Esempi}
+\section{Example}
 %------------------------------------------------
 
 \begin{frame}
 \frametitle{Figure}
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{GraphDatabase_PropertyGraph.png}
-\caption{Esmepio di vertici OrientDB}
+\caption{OrientDB vertex example}
 \end{figure}
 \end{frame}
 
@@ -252,7 +252,7 @@ Le sue caratteristiche principali sono.
 \frametitle{Figure}
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{01_mongodb_courses.png}
-\caption{Esmepio conversione SQL a MongoDB}
+\caption{SQL to MongoDB schema}
 \end{figure}
 \end{frame}
 
@@ -273,7 +273,7 @@ Le sue caratteristiche principali sono.
 %------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{Fine}}
+\Huge{\centerline{End}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
